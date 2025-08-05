@@ -13,7 +13,7 @@ Epsilon is a novel Transformer architecture designed for high efficiency, traini
 
 For a deep dive into the mathematical foundations, stability proofs, and architectural design of Epsilon, **please read the full technical paper.**
 
-**[--> Read the Full Epsilon Paper (PDF) <--](./Epsilon_Paper.pdf)**
+**[--> Read the Full Epsilon Paper (PDF) <--](./assets/Epsilon_Paper.pdf)**
 
 ## The Core Idea
 
@@ -24,7 +24,7 @@ The standard Transformer's O(n²) complexity is a major bottleneck for long sequ
 
 This efficiency is driven by the model learning to solve tasks with a fraction of its potential computational depth, as shown below:
 
-![Average Halting Depth During Training](halting_depth_graph.png)
+![Average Halting Depth During Training](./assets/halting_depth_graph.png)
 
 ---
 
@@ -42,17 +42,19 @@ This efficiency is driven by the model learning to solve tasks with a fraction o
 
 ```text
 .
-├── Epsilon_Paper.pdf         # The official whitepaper
-├── train.py                  # Main script to train the Epsilon Transformer
-├── model.py                  # Top-level EpsilonTransformer model
-├── epsilon_block.py          # Core recursive block with halting
-├── components.py             # Architectural components (HQSA, CenterNorm)
-├── diagnostics.py            # Advanced functions for model analysis
-├── interpretability_utils.py # Utilities for logging diagnostic data
-├── data_utils.py             # IMDb data loading & preprocessing
-├── vanilla_baseline.py       # Standard Transformer baseline
-├── requirements.txt          # Python dependencies
-└── README.md                 # This file
+├── assets/
+│   ├── Epsilon_Paper.pdf         # The official whitepaper
+│   └── halting_depth_graph.png   # Training visualization
+├── train.py                      # Main script to train the Epsilon Transformer
+├── model.py                      # Top-level EpsilonTransformer model
+├── epsilon_block.py              # Core recursive block with halting
+├── components.py                 # Architectural components (HQSA, CenterNorm)
+├── diagnostics.py                # Advanced functions for model analysis
+├── interpretability_utils.py     # Utilities for logging diagnostic data
+├── data_utils.py                 # IMDb data loading & preprocessing
+├── vanilla_baseline.py           # Standard Transformer baseline
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project overview
 ```
 
 ---
