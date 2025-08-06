@@ -10,3 +10,6 @@ venv/
 # Epsilon specific output
 epsilon_paper_run/
 vanilla_model_output/
+
+# MacOS
+.DS_Store
